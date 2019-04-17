@@ -1,0 +1,14 @@
+{
+    "name": "ddf--unpop--family_planning_indicators",
+    "author": "Gapminder",
+    "description": "Estimates and Projections of Family Planning Indicators",
+    "language": {
+        "name": "English",
+        "id": "en"
+    },
+    "translations": [],
+    "license": "CC-BY-4.0",
+    "title": "UNPop Estimates and Projections of Family Planning Indicators ",
+    "version": "0.0.1",
+    "resources": []
+}
