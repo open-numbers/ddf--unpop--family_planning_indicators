@@ -6,9 +6,9 @@ Estimates and Projections of Family Planning Indicators
 
 In the source file there are following indicators:
 
-- Contraceptive prevalence: Any method (Percentage) = Percentage of married or in-union women of reproductive age (15-49 years) who are currently using any method of contraception
+- Contraceptive prevalence: Any method (Percentage)
 - Contraceptive prevalence: Any modern method (Percentage) 
-- Contraceptive prevalence: Any traditional method (Percentage) = Percentage of married or in-union women of reproductive age (15-49 years) who are currently using any traditional method of contraception
+- Contraceptive prevalence: Any traditional method (Percentage) 
 - Unmet need for family planning: Any method (Percentage) 
 - Unmet need for family planning: Any modern method (Percentage) 
 - Total demand for family planning (Percentage) 
