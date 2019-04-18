@@ -1,0 +1,11 @@
+concept,name,concept_type
+contraceptive_prevalence_percentage,Contraceptive prevalence (Percentage),measure
+unmet_need_percentage,Unmet need (Percentage),measure
+total_demand_percentage,Total demand (Percentage),measure
+demand_satisfied_percentage,Demand satisfied (Percentage),measure
+contraceptive_prevalence_number,Contraceptive prevalence (Number),measure
+unmet_need_number,Unmet need (Number),measure
+year,Year,time
+name,Name,string
+method,Contraception method,entity_domain
+country,Country,entity_domain

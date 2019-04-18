@@ -1,14 +1,320 @@
 {
     "name": "ddf--unpop--family_planning_indicators",
-    "author": "Gapminder",
-    "description": "Estimates and Projections of Family Planning Indicators",
     "language": {
         "name": "English",
         "id": "en"
     },
-    "translations": [],
-    "license": "CC-BY-4.0",
     "title": "UNPop Estimates and Projections of Family Planning Indicators ",
+    "description": "Estimates and Projections of Family Planning Indicators",
+    "author": "Gapminder",
+    "license": "CC-BY-4.0",
+    "translations": [],
     "version": "0.0.1",
-    "resources": []
+    "created": "2019-04-18T07:37:13.027005+00:00",
+    "resources": [
+        {
+            "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "name": "ddf--datapoints--contraceptive_prevalence_number--by--country--method--year",
+            "path": "ddf--datapoints--contraceptive_prevalence_number--by--country--method--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "contraceptive_prevalence_number"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--contraceptive_prevalence_percentage--by--country--method--year",
+            "path": "ddf--datapoints--contraceptive_prevalence_percentage--by--country--method--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "contraceptive_prevalence_percentage"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--demand_satisfied_percentage--by--country--method--year",
+            "path": "ddf--datapoints--demand_satisfied_percentage--by--country--method--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "demand_satisfied_percentage"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--total_demand_percentage--by--country--year",
+            "path": "ddf--datapoints--total_demand_percentage--by--country--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "total_demand_percentage"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--unmet_need_number--by--country--method--year",
+            "path": "ddf--datapoints--unmet_need_number--by--country--method--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "unmet_need_number"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--unmet_need_percentage--by--country--method--year",
+            "path": "ddf--datapoints--unmet_need_percentage--by--country--method--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "unmet_need_percentage"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--country",
+            "path": "ddf--entities--country.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "country"
+            }
+        },
+        {
+            "name": "ddf--entities--method",
+            "path": "ddf--entities--method.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "method"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "method"
+            }
+        }
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "method"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--method"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ],
+                "value": "contraceptive_prevalence_number",
+                "resources": [
+                    "ddf--datapoints--contraceptive_prevalence_number--by--country--method--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ],
+                "value": "contraceptive_prevalence_percentage",
+                "resources": [
+                    "ddf--datapoints--contraceptive_prevalence_percentage--by--country--method--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ],
+                "value": "demand_satisfied_percentage",
+                "resources": [
+                    "ddf--datapoints--demand_satisfied_percentage--by--country--method--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "year"
+                ],
+                "value": "total_demand_percentage",
+                "resources": [
+                    "ddf--datapoints--total_demand_percentage--by--country--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ],
+                "value": "unmet_need_number",
+                "resources": [
+                    "ddf--datapoints--unmet_need_number--by--country--method--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country",
+                    "method",
+                    "year"
+                ],
+                "value": "unmet_need_percentage",
+                "resources": [
+                    "ddf--datapoints--unmet_need_percentage--by--country--method--year"
+                ]
+            }
+        ],
+        "synonyms": []
+    }
 }
